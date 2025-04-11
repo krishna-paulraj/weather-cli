@@ -1,13 +1,22 @@
 {
   "name": "windio",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "index.js",
-  "bin": "./bin/index.js",
+  "bin": {
+    "windio": "bin/index.js"
+  },
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "weather",
+    "terminal",
+    "weather-cli",
+    "location",
+    "geolocation"
+  ],
   "author": "Suresh Krishna",
   "license": "ISC",
   "description": "A cli tool to get weather data.",
