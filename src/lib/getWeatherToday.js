@@ -4,12 +4,16 @@ import spinner from "../helpers/spinner.js";
 
 export async function getWeatherToday(city) {
   if (!process.env.API_KEY) {
-    console.log("❌ API Key not found. Use --setApi to save it.");
+    console.log(
+      "❌ API Key not found. Use --apiKey <your-openWeatherApi-key> to save it.",
+    );
     return;
   }
 
   if (!city) {
-    console.log("❌ City not provided. Use --setCity to specify a city.");
+    console.log(
+      "❌ City not provided. Use --setCity <your-city-name> to specify a city.",
+    );
     return;
   }
 
